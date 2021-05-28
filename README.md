@@ -1,0 +1,1 @@
+This app makes use of the Indian Goverment's CoWIN API to fetch available vaccination centers by PIN code and date and asynchronously display to the results.
