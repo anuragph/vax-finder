@@ -4,19 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <title>Vax Finder</title>
 </head>
 <body>
-  <h1>Vax Finder</h1>
 
-  <form action="" method="" id="my-form">
-    <label for="pin">PIN code:</label>
-    <input type="text" name="pin">
-    <input type="date" name='date'>
-    <input type="submit" value="submit">
-  </form>
+  <div class="container-fluid mt-5 pt-5">
+    <header>
+      <h1 class="text-center text-muted"><b>Vax Finder</b></h1>
+      <p class="text-center text-muted">
+        Enter PIN code and Date to find available vaccination centers.
+      </p>
+    </header>
 
-  <ul id='center-list'></ul>
+
+    <form action="" method="" id="my-form" class="form-inline my-5 d-flex justify-content-center">
+      <label for="pin" class="text-muted mx-1">PIN code:</label>
+      <input type="text" name="pin" placeholder="Try: 110001" class="form-control">
+      <label for="date" class="text-muted mx-1">Date:</label>
+      <input type="date" name="date" class="form-control">
+      <input type="submit" value="Submit" class="btn btn-info m-2">
+    </form>
+  </div>
+
+  <div class="container">
+    <ol id='center-list' class="text-muted"></ol>
+  </div>
+
   
   <script src="./main.js"></script>
 </body>
